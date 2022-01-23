@@ -4,6 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/format"
     tools:context=".MenuActivity">
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/applogo"
+        android:textAlignment="center"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/learn"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/sbtn"
+        android:textAlignment="center"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="@id/appLogo"
+        app:layout_constraintRight_toRightOf="@id/appLogo"
+        app:layout_constraintTop_toBottomOf="@id/bannerDescription" />
+
+    <ImageView
+        android:id="@+id/quiz"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/qbtn"
+        android:textAlignment="center"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@id/learn"
+        app:layout_constraintRight_toRightOf="@id/learn"
+        app:layout_constraintTop_toBottomOf="@id/learn" />
+
+    <TextView
+        android:id="@+id/bannerDescription"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:text="Learn, Study and Develop"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appLogo" />
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
