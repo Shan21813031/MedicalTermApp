@@ -4,6 +4,133 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/format"
     tools:context=".StudyActivity">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_atrium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/atrium_flashcard"/>
+
+            <ImageView
+                android:id="@+id/img_base"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/base_flashcard"/>
+
+            <ImageView
+                android:id="@+id/img_carotid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/carotid_flashcard1"/>
+
+            <ImageView
+                android:id="@+id/img_endocardium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/endocardium_flashcard"/>
+
+            <ImageView
+                android:id="@+id/img_epicardium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/epicardium_flashcard"/>
+
+            <ImageView
+                android:id="@+id/img_intercostal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/intercostal_flashcard"/>
+
+            <ImageView
+                android:id="@+id/img_jugular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/jugular_flashcard"/>
+
+            <ImageView
+                android:id="@+id/img_manubrium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/manubrium_flashcard"/>
+
+            <ImageView
+                android:id="@+id/img_mediastinum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/mediastinum_flashcard"/>
+
+            <ImageView
+                android:id="@+id/img_mycardium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/myocardium_flashcard"/>
+
+            <ImageView
+                android:id="@+id/img_pericardium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/pericardium_flashcard"/>
+
+            <ImageView
+                android:id="@+id/img_septum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/septum_flashcard"/>
+
+            <ImageView
+                android:id="@+id/img_sternal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/sternal_flashcard"/>
+
+            <ImageView
+                android:id="@+id/img_thorax"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/thorax_flashcard"/>
+
+            <ImageView
+                android:id="@+id/img_ventricles"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ventricles_flashcard"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

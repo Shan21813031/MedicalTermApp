@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class MenuActivity extends AppCompatActivity {
@@ -14,7 +15,7 @@ public class MenuActivity extends AppCompatActivity {
     private View appView;
     ImageView quiz, study;
     boolean firstImage = false;
-
+    ImageButton studyImageButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +32,17 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
-        study = findViewById(R.id.learn);
+    //    study = findViewById(R.id.learn);
         quiz = findViewById(R.id.quiz);
+
+        studyImageButton = (ImageButton) findViewById(R.id.learn);
+        studyImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentLoadStudy = new Intent(MenuActivity.this, StudyActivity.class);
+                startActivity(intentLoadStudy);
+            }
+        });
 
         quiz.setOnTouchListener(new View.OnTouchListener() {
             @Override
