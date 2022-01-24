@@ -16,6 +16,7 @@ public class MenuActivity extends AppCompatActivity {
     ImageView quiz, study;
     boolean firstImage = false;
     ImageButton studyImageButton;
+    ImageButton quizImageButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +34,7 @@ public class MenuActivity extends AppCompatActivity {
         });
 
     //    study = findViewById(R.id.learn);
-        quiz = findViewById(R.id.quiz);
+    //    quiz = findViewById(R.id.quiz);
 
         studyImageButton = (ImageButton) findViewById(R.id.learn);
         studyImageButton.setOnClickListener(new View.OnClickListener() {
@@ -44,7 +45,16 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
-        quiz.setOnTouchListener(new View.OnTouchListener() {
+        quizImageButton = (ImageButton) findViewById(R.id.quiz);
+        quizImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentLoadQuiz = new Intent(MenuActivity.this, QuizActivity.class);
+                startActivity(intentLoadQuiz);
+            }
+        });
+
+       /* quiz.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
 
@@ -61,7 +71,7 @@ public class MenuActivity extends AppCompatActivity {
                 }
                 return true;
             }
-        });
+        }); */
     }
 
     @Override

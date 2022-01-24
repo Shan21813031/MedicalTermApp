@@ -30,7 +30,7 @@
         app:layout_constraintRight_toRightOf="@id/appLogo"
         app:layout_constraintTop_toBottomOf="@id/bannerDescription" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/quiz"
         android:layout_width="140dp"
         android:layout_height="140dp"
