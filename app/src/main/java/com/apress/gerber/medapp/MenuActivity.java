@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 public class MenuActivity extends AppCompatActivity {
@@ -33,27 +34,6 @@ public class MenuActivity extends AppCompatActivity {
         study = findViewById(R.id.learn);
         quiz = findViewById(R.id.quiz);
 
-
-        study.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-
-                if(firstImage)
-                {
-                    study.setImageResource(R.drawable.study);
-                    firstImage = false;
-                    startActivity(new Intent(MenuActivity.this, StudyActivity.class));
-
-                }
-                else{
-                    study.setImageResource(R.drawable.sbtn);
-                    firstImage = true;
-
-                }
-                return false;
-            }
-        });
-
         quiz.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -69,7 +49,7 @@ public class MenuActivity extends AppCompatActivity {
                     firstImage = true;
 
                 }
-                return false;
+                return true;
             }
         });
     }
