@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="140dp"
         android:padding="10dp"
-        android:text="the Question is..."
+        android:text=" "
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="25dp" />
@@ -38,10 +38,9 @@
             android:layout_weight="1"
             android:background="#76E900"
             android:padding="10dp"
-            android:text="A)"
+            android:text=" "
             android:textAlignment="center"
-            android:textSize="20dp"
-        />
+            android:textSize="20dp" />
 
         <Button
             android:id="@+id/optionB"
@@ -52,10 +51,9 @@
             android:layout_weight="1"
             android:background="#76E900"
             android:padding="10dp"
-            android:text="B)"
+            android:text=" "
             android:textAlignment="center"
-            android:textSize="20dp"
-            />
+            android:textSize="20dp" />
 
 
     </LinearLayout>
@@ -79,7 +77,7 @@
             android:layout_weight="1"
             android:background="#76E900"
             android:padding="10dp"
-            android:text="C)"
+            android:text=" "
             android:textAlignment="center"
             android:textSize="20dp"
         />
@@ -93,7 +91,7 @@
             android:layout_weight="1"
             android:background="#76E900"
             android:padding="10dp"
-            android:text="D)"
+            android:text=" "
             android:textAlignment="center"
             android:textSize="20dp"
         />

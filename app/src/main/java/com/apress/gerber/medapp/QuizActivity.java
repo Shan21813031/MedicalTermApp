@@ -24,6 +24,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+
 public class QuizActivity extends AppCompatActivity {
 
     private View appView;
@@ -49,7 +50,6 @@ public class QuizActivity extends AppCompatActivity {
 
         timer = findViewById(R.id.timer);
         qs = findViewById(R.id.questiontxt);
-
         optA = findViewById(R.id.optionA);
         optB = findViewById(R.id.optionB);
         optC = findViewById(R.id.optionC);
@@ -60,11 +60,11 @@ public class QuizActivity extends AppCompatActivity {
 
     }
 
-    public void updateQuestion() {
+    private void updateQuestion() {
 
         total++;
         if (total>27){
-
+            Toast.makeText(QuizActivity.this,"error", Toast.LENGTH_LONG).show();
         }
         else{
 
