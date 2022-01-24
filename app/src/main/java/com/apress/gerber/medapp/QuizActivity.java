@@ -34,6 +34,7 @@ public class QuizActivity extends AppCompatActivity {
     int correct = 0;
     int wrong = 0;
 
+    FirebaseDatabase database = FirebaseDatabase.getInstance("https://medicaltermapp-default-rtdb.europe-west1.firebasedatabase.app");
     DatabaseReference reference;
 
     @Override

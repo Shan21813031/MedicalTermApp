@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "290985458745",
+    "firebase_url": "https://medicaltermapp-default-rtdb.europe-west1.firebasedatabase.app",
     "project_id": "medicaltermapp",
     "storage_bucket": "medicaltermapp.appspot.com"
   },
