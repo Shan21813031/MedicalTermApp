@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.os.Handler;
 import android.view.Gravity;
 import android.view.MotionEvent;
@@ -29,7 +30,7 @@ public class QuizActivity extends AppCompatActivity {
 
     private View appView;
     TextView timer, qs;
-    Button optA, optB, optC, optD;
+    Button optA, optB, optC, optD, quitBtn;
     int total = 1;
     int correct = 0;
     int wrong = 0;
@@ -56,7 +57,17 @@ public class QuizActivity extends AppCompatActivity {
         optC = findViewById(R.id.optionC);
         optD = findViewById(R.id.optionD);
 
+        quitBtn = findViewById(R.id.Quit);
+
+        quitBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(QuizActivity.this, MenuActivity.class));
+            }
+        });
+
         updateQuestion();
+        reverseTimer(15, timer);
 
 
     }
@@ -64,8 +75,16 @@ public class QuizActivity extends AppCompatActivity {
     private void updateQuestion() {
 
         total++;
-        if (total>27){
+        if (total>61){
             Toast.makeText(QuizActivity.this,"error", Toast.LENGTH_LONG).show();
+            Intent x = new Intent(QuizActivity.this, StatisticsActivity.class);
+
+            x.putExtra("total",String.valueOf(total));
+            x.putExtra("correct",String.valueOf(correct));
+            x.putExtra("incorrect",String.valueOf(wrong));
+
+            startActivity(x);
+
         }
         else{
 
@@ -290,6 +309,32 @@ public class QuizActivity extends AppCompatActivity {
             });
 
         }
+
+    }
+
+    public void reverseTimer(int seconds, final TextView tv){
+
+        new CountDownTimer(seconds* 1000+1000, 1000) {
+
+            public void onTick (long millisUntilFinished) {
+
+                int seconds = (int) millisUntilFinished / 1000;
+                int minutes = seconds / 60;
+                seconds = seconds % 60;
+                tv.setText(String.format("%02d", minutes) + ":" + String.format("%02d", seconds));
+
+            }
+
+            @Override
+            public void onFinish() {
+                tv.setText(("Completed"));
+                Intent myIntent = new Intent (QuizActivity.this, StatisticsActivity.class);
+                myIntent.putExtra("total", String.valueOf(total));
+                myIntent.putExtra("correct", String.valueOf(correct));
+                myIntent.putExtra("incorrect", String.valueOf(wrong));
+                startActivity(myIntent);
+            };
+        }.start();
 
     }
 

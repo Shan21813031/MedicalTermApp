@@ -13,10 +13,11 @@
         android:id="@+id/questiontxt"
         android:layout_width="match_parent"
         android:layout_height="140dp"
+        android:layout_marginTop="30dp"
         android:padding="10dp"
         android:text=" "
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="#03A9F4"
         android:textSize="25dp" />
 
     <LinearLayout
@@ -36,11 +37,11 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_weight="1"
-            android:background="#76E900"
+            android:backgroundTint="#03A9F4"
             android:padding="10dp"
             android:text=" "
             android:textAlignment="center"
-            android:textSize="20dp" />
+            android:textSize="12dp" />
 
         <Button
             android:id="@+id/optionB"
@@ -49,21 +50,21 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_weight="1"
-            android:background="#76E900"
+            android:backgroundTint="#03A9F4"
             android:padding="10dp"
             android:text=" "
             android:textAlignment="center"
-            android:textSize="20dp" />
+            android:textSize="12dp" />
 
 
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/seconddivide"
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:layout_marginTop="10dp"
-        android:id="@+id/seconddivide"
         android:layout_below="@+id/firstdivide"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal"
         android:padding="5dp"
         android:paddingTop="10dp">
@@ -75,12 +76,11 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_weight="1"
-            android:background="#76E900"
+            android:backgroundTint="#03A9F4"
             android:padding="10dp"
             android:text=" "
             android:textAlignment="center"
-            android:textSize="20dp"
-        />
+            android:textSize="12dp" />
 
         <Button
             android:id="@+id/optionD"
@@ -89,18 +89,17 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_weight="1"
-            android:background="#76E900"
+            android:backgroundTint="#03A9F4"
             android:padding="10dp"
             android:text=" "
             android:textAlignment="center"
-            android:textSize="20dp"
-        />
+            android:textSize="12dp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/thirddivide"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:layout_below="@id/seconddivide"
         >
 
@@ -111,17 +110,37 @@
             android:text="00:00"
             android:textAlignment="center"
             android:textStyle="bold"
-            android:textColor="@color/white"
+            android:textColor="#03A9F4"
             android:textSize="50dp"
             android:id="@+id/timer"
         />
 
+
+
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/fourth"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/thirddivide"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/Quit"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="52dp"
+            android:backgroundTint="#2B2D2F"
+            android:padding="10dp"
+            android:text="Quit"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold" />
 
 
-
-
+    </LinearLayout>
 
 
 

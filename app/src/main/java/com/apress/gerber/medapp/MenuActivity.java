@@ -13,10 +13,9 @@ import android.widget.ImageView;
 public class MenuActivity extends AppCompatActivity {
 
     private View appView;
-    ImageView quiz, study;
-    boolean firstImage = false;
     ImageButton studyImageButton;
     ImageButton quizImageButton;
+    Button quitBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +29,8 @@ public class MenuActivity extends AppCompatActivity {
                 if (visibility ==  0){
                     appView.setSystemUiVisibility(hideSystemBars());
                 }
+                quizImageButton.setImageResource(R.drawable.qbtn);
+                studyImageButton.setImageResource(R.drawable.sbtn);
             }
         });
 
@@ -41,6 +42,7 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intentLoadStudy = new Intent(MenuActivity.this, StudyActivity.class);
+                studyImageButton.setImageResource(R.drawable.study);
                 startActivity(intentLoadStudy);
             }
         });
@@ -50,6 +52,7 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intentLoadQuiz = new Intent(MenuActivity.this, QuizActivity.class);
+                quizImageButton.setImageResource(R.drawable.quiz);
                 startActivity(intentLoadQuiz);
             }
         });
@@ -72,6 +75,14 @@ public class MenuActivity extends AppCompatActivity {
                 return true;
             }
         }); */
+
+        quitBtn = findViewById(R.id.Return);
+        quitBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finishAffinity();
+            }
+        });
     }
 
     @Override

@@ -1,62 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/format"
+    android:background="@drawable/menu"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".MenuActivity">
 
     <ImageView
         android:id="@+id/appLogo"
         android:layout_width="match_parent"
         android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
         android:src="@drawable/applogo"
-        android:textAlignment="center"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textAlignment="center" />
 
-    <ImageButton
-        android:id="@+id/learn"
-        android:layout_width="140dp"
+    <LinearLayout
+        android:id="@+id/firstdivide"
+        android:layout_width="match_parent"
         android:layout_height="140dp"
-        android:layout_marginTop="44dp"
-        android:src="@drawable/sbtn"
-        android:textAlignment="center"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintLeft_toLeftOf="@id/appLogo"
-        app:layout_constraintRight_toRightOf="@id/appLogo"
-        app:layout_constraintTop_toBottomOf="@id/bannerDescription" />
+        android:layout_below="@+id/appLogo"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:paddingTop="10dp">
 
-    <ImageButton
-        android:id="@+id/quiz"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:layout_marginTop="24dp"
-        android:src="@drawable/qbtn"
-        android:textAlignment="center"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="@id/learn"
-        app:layout_constraintRight_toRightOf="@id/learn"
-        app:layout_constraintTop_toBottomOf="@id/learn" />
+        <ImageButton
 
-    <TextView
-        android:id="@+id/bannerDescription"
-        android:layout_width="0dp"
-        android:layout_height="30dp"
-        android:text="Learn, Study and Develop"
-        android:textAlignment="center"
-        android:textSize="14sp"
-        android:textStyle="italic"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/appLogo" />
+            android:id="@+id/learn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:src="@drawable/sbtn"
+            android:textAlignment="center" />
+
+        <ImageButton
+            android:id="@+id/quiz"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:src="@drawable/qbtn"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thirddivide"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/firstdivide"
+        >
+
+        <TextView
+            android:id="@+id/bannerDescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:text="Learn, Study and Develop"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/seconddivide"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/thirddivide">
+
+        <Button
+            android:id="@+id/Return"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="52dp"
+            android:backgroundTint="#2B2D2F"
+            android:padding="10dp"
+            android:text="Quit"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
 
 
 
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

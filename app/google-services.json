@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "290985458745",
-    "firebase_url": "https://medicaltermapp-default-rtdb.europe-west1.firebasedatabase.app",
-    "project_id": "medicaltermapp",
-    "storage_bucket": "medicaltermapp.appspot.com"
+    "project_number": "120923127192",
+    "firebase_url": "https://medapp-7bd0c-default-rtdb.firebaseio.com",
+    "project_id": "medapp-7bd0c",
+    "storage_bucket": "medapp-7bd0c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:290985458745:android:1df0bdf2c81f01ee3361e8",
+        "mobilesdk_app_id": "1:120923127192:android:7aef4960382bda425abfed",
         "android_client_info": {
           "package_name": "com.apress.gerber.medapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "290985458745-9qmhnl1gdlaid9kv49pcdrnreei1s76j.apps.googleusercontent.com",
+          "client_id": "120923127192-pv9o90odmtjhltca53pk729m2prnmdlu.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCVXipGauuCzwYc_KDFXjWxutU-H09m1CI"
+          "current_key": "AIzaSyA3fdtalsFdtdmzynABnircAAjIAzyUxh4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "290985458745-9qmhnl1gdlaid9kv49pcdrnreei1s76j.apps.googleusercontent.com",
+              "client_id": "120923127192-pv9o90odmtjhltca53pk729m2prnmdlu.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

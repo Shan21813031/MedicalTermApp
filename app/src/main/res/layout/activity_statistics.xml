@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/format"
+    tools:context=".StatisticsActivity">
+
+    <LinearLayout
+        android:id="@+id/thirddivide"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/bannerDescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:text="Learn, Study and Develop"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/questionTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="79dp"
+        android:text="Total Questions: " />
+
+
+    <TextView
+        android:id="@+id/sumCorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionTotal"
+        android:layout_alignStart="@+id/questionTotal"
+        android:textStyle="bold"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="105dp"
+        android:text="Sum of Correct: " />
+
+    <TextView
+        android:id="@+id/wrongTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sumCorrect"
+        android:layout_alignStart="@id/sumCorrect"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="105dp"
+        android:text="Sum of Incorrect: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="79dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/t1"
+        android:layout_below="@id/t1"
+        android:layout_marginTop="105dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/t2"
+        android:layout_below="@id/t2"
+        android:layout_marginTop="105dp"
+        android:text="TextView" />
+
+    <LinearLayout
+        android:id="@+id/fourth"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/wrongTotal"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/Return"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="26dp"
+            android:backgroundTint="#2B2D2F"
+            android:text="Main Menu"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

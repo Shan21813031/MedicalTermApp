@@ -3,6 +3,7 @@
     package="com.apress.gerber.medapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,6 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MedApp">
+        <activity
+            android:name=".StatisticsActivity"
+            android:exported="false" />
         <activity
             android:name=".ResultActivity"
             android:exported="false" />
@@ -31,8 +35,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
     </application>
 
 </manifest>
