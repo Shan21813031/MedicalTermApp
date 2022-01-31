@@ -76,7 +76,7 @@ public class QuizActivity extends AppCompatActivity {
         });
 
         updateQuestion();
-        reverseTimer(15, timer);
+        reverseTimer(600, timer);
 
 
     }
