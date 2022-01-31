@@ -31,6 +31,15 @@ public class QuizActivity extends AppCompatActivity {
     private View appView;
     TextView timer, qs;
     Button optA, optB, optC, optD, quitBtn;
+    int cSystem = 0;
+    int state = 0;
+    int speed = 0;
+    int direction = 0;
+    int location = 0;
+    int range = 0;
+    int amount = 0;
+    int procedure = 0;
+    int opposites = 0;
     int total = 1;
     int correct = 0;
     int wrong = 0;
@@ -82,6 +91,15 @@ public class QuizActivity extends AppCompatActivity {
             x.putExtra("total",String.valueOf(total));
             x.putExtra("correct",String.valueOf(correct));
             x.putExtra("incorrect",String.valueOf(wrong));
+            x.putExtra("cSystem", String.valueOf(cSystem));
+            x.putExtra("state", String.valueOf(state));
+            x.putExtra("speed", String.valueOf(speed));
+            x.putExtra("direction", String.valueOf(direction));
+            x.putExtra("location", String.valueOf(location));
+            x.putExtra("range", String.valueOf(range));
+            x.putExtra("amount", String.valueOf(amount));
+            x.putExtra("procedure", String.valueOf(procedure));
+            x.putExtra("opposites", String.valueOf(opposites));
 
             startActivity(x);
 
@@ -123,6 +141,33 @@ public class QuizActivity extends AppCompatActivity {
                         else{
                             wrong++;
                             optA.setBackgroundColor(RED);
+                            if (!optA.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("cardiovascular system")){
+                                cSystem++;
+                            }
+                            if (!optA.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("state")){
+                                state++;
+                            }
+                            if (!optA.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("speed/pace")){
+                                speed++;
+                            }
+                            if (!optA.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("direction")){
+                                direction++;
+                            }
+                            if (!optA.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("location")){
+                                location++;
+                            }
+                            if (!optA.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("range")){
+                                range++;
+                            }
+                            if (!optA.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("amount/quantity")){
+                                amount++;
+                            }
+                            if (!optA.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("procedure")){
+                                procedure++;
+                            }
+                            if (!optA.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("opposites")){
+                                opposites++;
+                            }
 
                             if(optB.getText().toString().equals(questions.getAnswer())){
                                 optB.setBackgroundColor(GREEN);
@@ -172,6 +217,33 @@ public class QuizActivity extends AppCompatActivity {
                         else{
                             wrong++;
                             optB.setBackgroundColor(RED);
+                            if (!optB.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("cardiovascular system")){
+                                cSystem++;
+                            }
+                            if (!optB.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("state")){
+                                state++;
+                            }
+                            if (!optB.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("speed/pace")){
+                                speed++;
+                            }
+                            if (!optB.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("direction")){
+                                direction++;
+                            }
+                            if (!optB.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("location")){
+                                location++;
+                            }
+                            if (!optB.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("range")){
+                                range++;
+                            }
+                            if (!optB.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("amount/quantity")){
+                                amount++;
+                            }
+                            if (!optB.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("procedure")){
+                                procedure++;
+                            }
+                            if (!optB.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("opposites")){
+                                opposites++;
+                            }
 
                             if(optA.getText().toString().equals(questions.getAnswer())){
                                 optA.setBackgroundColor(GREEN);
@@ -221,6 +293,33 @@ public class QuizActivity extends AppCompatActivity {
                         else{
                             wrong++;
                             optC.setBackgroundColor(RED);
+                            if (!optC.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("cardiovascular system")){
+                                cSystem++;
+                            }
+                            if (!optC.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("state")){
+                                state++;
+                            }
+                            if (!optC.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("speed/pace")){
+                                speed++;
+                            }
+                            if (!optC.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("direction")){
+                                direction++;
+                            }
+                            if (!optC.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("location")){
+                                location++;
+                            }
+                            if (!optC.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("range")){
+                                range++;
+                            }
+                            if (!optC.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("amount/quantity")){
+                                amount++;
+                            }
+                            if (!optC.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("procedure")){
+                                procedure++;
+                            }
+                            if (!optC.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("opposites")){
+                                opposites++;
+                            }
 
                             if(optB.getText().toString().equals(questions.getAnswer())){
                                 optB.setBackgroundColor(GREEN);
@@ -270,6 +369,33 @@ public class QuizActivity extends AppCompatActivity {
                         else{
                             wrong++;
                             optD.setBackgroundColor(RED);
+                            if (!optD.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("cardiovascular system")){
+                                cSystem++;
+                            }
+                            if (!optD.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("state")){
+                                state++;
+                            }
+                            if (!optD.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("speed/pace")){
+                                speed++;
+                            }
+                            if (!optD.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("direction")){
+                                direction++;
+                            }
+                            if (!optD.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("location")){
+                                location++;
+                            }
+                            if (!optD.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("range")){
+                                range++;
+                            }
+                            if (!optD.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("amount/quantity")){
+                                amount++;
+                            }
+                            if (!optD.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("procedure")){
+                                procedure++;
+                            }
+                            if (!optD.getText().toString().equals(questions.getAnswer()) && questions.getCategory().equals("opposites")){
+                                opposites++;
+                            }
 
                             if(optB.getText().toString().equals(questions.getAnswer())){
                                 optB.setBackgroundColor(GREEN);
@@ -332,6 +458,15 @@ public class QuizActivity extends AppCompatActivity {
                 myIntent.putExtra("total", String.valueOf(total));
                 myIntent.putExtra("correct", String.valueOf(correct));
                 myIntent.putExtra("incorrect", String.valueOf(wrong));
+                myIntent.putExtra("cSystem", String.valueOf(cSystem));
+                myIntent.putExtra("state", String.valueOf(state));
+                myIntent.putExtra("speed", String.valueOf(speed));
+                myIntent.putExtra("direction", String.valueOf(direction));
+                myIntent.putExtra("location", String.valueOf(location));
+                myIntent.putExtra("range", String.valueOf(range));
+                myIntent.putExtra("amount", String.valueOf(amount));
+                myIntent.putExtra("procedure", String.valueOf(procedure));
+                myIntent.putExtra("opposites", String.valueOf(opposites));
                 startActivity(myIntent);
             };
         }.start();

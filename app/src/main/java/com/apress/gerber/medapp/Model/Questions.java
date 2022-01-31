@@ -2,19 +2,28 @@ package com.apress.gerber.medapp.Model;
 
 public class Questions {
 
-    public String question, answer, optionA, optionB, optionC, optionD;
+    public String question, answer, optionA, optionB, optionC, optionD, category;
 
 
-    public Questions(String question, String answer, String optionA, String optionB, String optionC, String optionD){
+    public Questions(String question, String answer, String optionA, String optionB, String optionC, String optionD, String category){
         this.question = question;
         this.answer = answer;
         this.optionA = optionA;
         this.optionB = optionB;
         this.optionC = optionC;
         this.optionD = optionD;
+        this.category = category;
     }
 
     public Questions() { }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category){
+        this.category = category;
+    }
 
 
     public String getQuestion() {
@@ -66,6 +75,5 @@ public class Questions {
     }
 
 }
-
 
 

@@ -90,22 +90,175 @@
     <LinearLayout
         android:id="@+id/fourth"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_below="@id/wrongTotal"
-        android:orientation="horizontal"
-        android:padding="10dp">
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastfinalDivide"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/Return"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginTop="26dp"
+            android:layout_height="wrap_content"
             android:backgroundTint="#2B2D2F"
             android:text="Main Menu"
             android:textColor="@color/white"
             android:textSize="26sp"
             android:textStyle="bold" />
 
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lastDivide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wrongTotal"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/aowLabel"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="10dp"
+            android:text="areas of weakness"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/cardioSystem"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#03A9F4"
+            android:text="Cardiovascular System"
+            android:textSize="9dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/stateLbl"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="27dp"
+            android:backgroundTint="#03A9F4"
+            android:text="state"
+            android:textSize="9dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/finalDivide"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/lastDivide"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/pace"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="27dp"
+            android:backgroundTint="#03A9F4"
+            android:text="pace"
+            android:textSize="9dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/directionLbl"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="27dp"
+            android:backgroundTint="#03A9F4"
+            android:text="direction"
+            android:textSize="9dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/locationLbl"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="27dp"
+            android:backgroundTint="#03A9F4"
+            android:text="location"
+            android:textSize="9dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/divide"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/finalDivide"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/rangeLbl"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="27dp"
+            android:backgroundTint="#03A9F4"
+            android:text="range"
+            android:textSize="9dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/quant"
+            android:layout_width="85dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="27dp"
+            android:backgroundTint="#03A9F4"
+            android:text="quantity"
+            android:textSize="9dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/procedure"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="27dp"
+            android:backgroundTint="#03A9F4"
+            android:text="procedure"
+            android:textSize="9dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/divide"
+        android:orientation="horizontal"
+        android:id="@+id/lastfinalDivide">
+
+        <Button
+            android:id="@+id/oppLbl"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="27dp"
+            android:backgroundTint="#03A9F4"
+            android:text="opposites"
+            android:textSize="9dp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
