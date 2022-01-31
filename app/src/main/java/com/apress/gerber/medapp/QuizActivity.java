@@ -78,7 +78,6 @@ public class QuizActivity extends AppCompatActivity {
         updateQuestion();
         reverseTimer(600, timer);
 
-
     }
 
     private void updateQuestion() {
